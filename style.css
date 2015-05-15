@@ -109,7 +109,7 @@ hgroup h3{
   float:left;
   padding:0;
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 #planning{
@@ -119,6 +119,12 @@ hgroup h3{
 }
 
 #master-plan{
+  height: 6.25em;
+  width: 25em;
+  text-align: left;
+}
+
+#programming, #landscaping-sub{
   height: 6.25em;
   width: 25em;
   text-align: left;
