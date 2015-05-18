@@ -4,9 +4,6 @@ html, body{
   font-family: 'Lato', sans-serif;
   color: #333;
   font-size: 100%;
-  min-width: 1440px;
-  overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 h1, h2, h3{
@@ -82,9 +79,8 @@ margin-left: 1%;
 /*=====================work=======================*/
 
 #work{
-  width: 100%;
   background-color: white;
-  margin: 3.25em 3.625%;
+  margin: 3.25em 0;
   text-align: center;
 }
 
@@ -94,40 +90,88 @@ margin-left: 1%;
   clear: both;
 }
 
-.work-tiles{
+
+.tiles{
+  margin: auto;
+  display: inline-block;
   position: relative;
-}.work-tiles ul{
-    display: inline;
-    position: relative;
-    margin: auto;
-    text-indent: none;
-    padding: 0;
-    margin: 0;
-  }.work-tiles li{
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    float: left;
-    width: 32.2%;
-    margin-bottom: 1em;
-    padding: 0;
-    list-style-type: none;
-  }.work-tiles a{
-    text-decoration: none;
-    border: none;
-  }.work-tiles img{
+}
+
+.tile-item{
+  position: relative;
+  float:left;
+  padding: 0 0 5% 0;
+  margin: auto;
+  text-align: center;
+  height: 25em;
+  width: 25em;
+  }.tile-item img{
     display: block;
     height: 25em;
     width: 25em;
+  }.tile-item a{
+    text-decoration: none;
+    border: none;
   }
 
+#work-tiles{
+  width: 100%;
+  text-align: center;
+  margin-top: 4.5rem;
+  margin-bottom: 2rem;
+}
+
+
+/*.tiles{
+  margin: auto;
+  position: relative;
+  display: block;
+  list-style-type: none;
+}
+
+.tile-item{
+  float:left;
+  padding: 0 0 5% 0;
+  margin: auto;
+  text-align: center;
+  height: 25em;
+  width: 25em;
+}
+
+#work-tiles{
+  width: 100%;
+  text-align: center;
+  margin-top: 4.5rem;
+  margin-bottom: 2rem;
+}
+
+  .tiles div{
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    float: left;
+    width: 25em;
+    margin-bottom: 1em;
+    padding: 0;
+    list-style-type: none;
+  }.tiles a{
+    text-decoration: none;
+    border: none;
+  }.tiles img{
+    display: block;
+    height: 25em;
+    width: 25em;
+  }*/
+
   .hover-label{
+    position: absolute;
+    left:0;
+    z-index: 6;
     background: rgba(0, 0, 0, 0.6);
     color: #000;
     cursor: pointer;
     height: 25em;
     width: 25em;
-    position: absolute;
     opacity: 0;
     -webkit-transition: opacity 500ms;
     -moz-transition: opacity 500ms;
@@ -135,7 +179,6 @@ margin-left: 1%;
     transition: opacity 500ms;
     text-align: center;
     vertical-align: middle;
-    left: 0;
     }.hover-label span h1{
       color: white;
       text-transform: uppercase;
