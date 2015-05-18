@@ -4,6 +4,9 @@ html, body{
   font-family: 'Lato', sans-serif;
   color: #333;
   font-size: 100%;
+  min-width: 1440px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 h1, h2, h3{
@@ -73,13 +76,13 @@ hgroup{
 }
 
 hgroup h3{
-  margin-left: 3%;
+margin-left: 1%;
 }
 
 /*=====================work=======================*/
 
 #work{
-  height:100%;
+  width: 100%;
   background-color: white;
   margin: 3.25em 3.625%;
   text-align: center;
@@ -91,70 +94,60 @@ hgroup h3{
   clear: both;
 }
 
-.work-row{
-  width: 100%;
-  height: 25em;
-}
+.work-tiles{
+  position: relative;
+}.work-tiles ul{
+    display: inline;
+    position: relative;
+    margin: auto;
+    text-indent: none;
+    padding: 0;
+    margin: 0;
+  }.work-tiles li{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    float: left;
+    width: 32.2%;
+    margin-bottom: 1em;
+    padding: 0;
+    list-style-type: none;
+  }.work-tiles a{
+    text-decoration: none;
+    border: none;
+  }.work-tiles img{
+    display: block;
+    height: 25em;
+    width: 25em;
+  }
 
-.title-row{
-  width: 100%;
-  height: 6.25em;
-}
+  .hover-label{
+    background: rgba(0, 0, 0, 0.6);
+    color: #000;
+    cursor: pointer;
+    height: 25em;
+    width: 25em;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+    text-align: center;
+    vertical-align: middle;
+    left: 0;
+    }.hover-label span h1{
+      color: #000;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      font-weight: 600;
+      font-size: 1.1em;
+      padding-top: 25%;
+    }.hover-label:hover {
+      opacity: 1;
+    }
 
-.projects{
-  margin: auto;
-  display: inline-block;
-}
-
-.project-title{
-  float:left;
-  padding:0;
-  margin: 0;
-  text-align: left;
-}
-
-#planning{
-  height: 6.25em;
-  width: 50em;
-  text-align: left;
-}
-
-#master-plan{
-  height: 6.25em;
-  width: 25em;
-  text-align: left;
-}
-
-#programming, #landscaping-sub{
-  height: 6.25em;
-  width: 25em;
-  text-align: left;
-}
-
-#landscaping{
-  height: 6.25em;
-  width: 25em;
-}
-
-.project-item{
-  float:left;
-  padding:0;
-  margin: 0;
-  text-align: center;
-}.project-item img{
-  height: 25em;
-  width: 25em;
-  margin: 0;
-  padding: 0;
-}
-
-.project-item-left{
-  margin-right: 0;
-}
-
-.project-item-right{
-  margin-left: 0;
-}
+/************* MEDIA***********/
 
 @media (max-width: 1300px){
   body { font-size:90%;}
