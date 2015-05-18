@@ -82,7 +82,9 @@ margin-left: 1%;
   background-color: white;
   margin: 3.25em 0;
   text-align: center;
-}
+}#work h2{
+    margin: 1em 0 1em 0;
+  }
 
 .clear-fix:after{
   content: "";
@@ -95,100 +97,57 @@ margin-left: 1%;
   margin: auto;
   display: inline-block;
   position: relative;
+  height: 20em;
 }
 
 .tile-item{
   position: relative;
   float:left;
-  padding: 0 0 5% 0;
   margin: auto;
   text-align: center;
-  height: 25em;
-  width: 25em;
+  height: 20em;
+  width: 20em;
   }.tile-item img{
     display: block;
-    height: 25em;
-    width: 25em;
+    height: 20em;
+    width: 20em;
   }.tile-item a{
     text-decoration: none;
     border: none;
   }
 
-#work-tiles{
+.work-tiles{
   width: 100%;
+  height: 20em;
   text-align: center;
-  margin-top: 4.5rem;
-  margin-bottom: 2rem;
 }
 
-
-/*.tiles{
-  margin: auto;
-  position: relative;
-  display: block;
-  list-style-type: none;
-}
-
-.tile-item{
-  float:left;
-  padding: 0 0 5% 0;
-  margin: auto;
+.hover-label{
+  position: absolute;
+  left:0;
+  z-index: 6;
+  background: rgba(0, 0, 0, 0.6);
+  color: #000;
+  cursor: pointer;
+  height: 20em;
+  width: 20em;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
   text-align: center;
-  height: 25em;
-  width: 25em;
-}
-
-#work-tiles{
-  width: 100%;
-  text-align: center;
-  margin-top: 4.5rem;
-  margin-bottom: 2rem;
-}
-
-  .tiles div{
-    position: absolute;
-    display: block;
-    overflow: hidden;
-    float: left;
-    width: 25em;
-    margin-bottom: 1em;
-    padding: 0;
-    list-style-type: none;
-  }.tiles a{
-    text-decoration: none;
-    border: none;
-  }.tiles img{
-    display: block;
-    height: 25em;
-    width: 25em;
-  }*/
-
-  .hover-label{
-    position: absolute;
-    left:0;
-    z-index: 6;
-    background: rgba(0, 0, 0, 0.6);
-    color: #000;
-    cursor: pointer;
-    height: 25em;
-    width: 25em;
-    opacity: 0;
-    -webkit-transition: opacity 500ms;
-    -moz-transition: opacity 500ms;
-    -o-transition: opacity 500ms;
-    transition: opacity 500ms;
-    text-align: center;
-    vertical-align: middle;
-    }.hover-label span h1{
-      color: white;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-      font-weight: 600;
-      font-size: 1.1em;
-      padding-top: 25%;
-    }.hover-label:hover {
-      opacity: 1;
-    }
+  vertical-align: middle;
+  }.hover-label span h1{
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding-top: 45%;
+  }.hover-label:hover {
+    opacity: 1;
+  }
 
 /************* MEDIA***********/
 
