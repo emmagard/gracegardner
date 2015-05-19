@@ -17,9 +17,14 @@ h1{
 }
 h2{
   font-size: 4.236em;
+  text-align: center;
 }
 h3{
   font-size: 2.618em;
+}
+
+hr{
+  margin: 1em 20% 1em;
 }
 /*=====================nav bar=======================*/
 nav {
@@ -64,7 +69,7 @@ nav ul li a:focus {
   height: 100%;
   width: 100%;
   background: linear-gradient(0deg, #fff, transparent),
-              url('images/mountiansBw.jpg') no-repeat center center;
+              url('images/bougSky.JPG') no-repeat center center;
   background-size: cover;
 }
 
@@ -143,12 +148,28 @@ margin-left: 1%;
     color: white;
     text-transform: uppercase;
     margin-bottom: 10px;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.1em;
     padding-top: 45%;
+  }.hover-label span h2{
+    font-size: 0.9em;
+    font-weight: 400;
+    color: white;
   }.hover-label:hover {
     opacity: 1;
   }
+
+/************PROJECTS**********/
+
+.project-img{
+  display: block;
+  margin: auto;
+  width: 60%;
+}.project-p{
+  text-align: left;
+  margin: 1em 30%;
+  line-height: 1.6;
+}
 
 /************* MEDIA***********/
 
