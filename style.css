@@ -171,6 +171,26 @@ margin-left: 1%;
   line-height: 1.6;
 }
 
+.slick-prev{
+  left: 15%;
+  color: black;
+}
+
+.slick-prev:before{
+  content: '<';
+  font-weight: 700
+}
+
+.slick-next{
+  right: 15%;
+  color: black;
+}
+
+.slick-next:before{
+  content: '>';
+  font-weight: 700
+}
+
 /************* MEDIA***********/
 
 @media (max-width: 1300px){
