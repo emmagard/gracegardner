@@ -39,6 +39,7 @@ nav ul li {
   font-size: 1rem;
   text-transform: uppercase;
   padding: 5px 25px;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 nav ul li a {
