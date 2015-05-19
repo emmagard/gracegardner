@@ -163,10 +163,10 @@ margin-left: 1%;
 /******CONTACT FOOTER***********/
 
 footer{
-  background-color: #6C91FF;
+  background-color: rgba(230, 230, 230, 1);
   text-align: center;
   padding: 1em 0 2em 0;
-  color: white;
+  color: black;
 }footer h4{
   font-size: 1.618em;
   font-weight: 300;
@@ -174,14 +174,45 @@ footer{
 
 /************PROJECTS**********/
 
+.project-img-no-text{
+  display: block;
+  margin: 4em auto;
+  width: 50%;
+}
+
+.project-img-thesis{
+  width: 40%;
+  display: block;
+  margin: auto;
+}
+
 .project-img{
   display: block;
   margin: auto;
   width: 60%;
-}.project-p{
+}
+.project-p{
   text-align: left;
   margin: 1em 30%;
   line-height: 1.6;
+}
+.project-h2{
+  margin-bottom: 0.4em;
+}
+
+#project h5{
+  text-align: center;
+}
+.project-home-button{
+  text-align: center;
+  text-decoration: none;
+  padding: 0.75em 1em;
+  background-color: #CFCFCF;
+  border-radius: 10px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.75);
+}.project-home-button:hover{
+  color: rgba(0, 0, 0, 1);
 }
 
 .slick-prev{
