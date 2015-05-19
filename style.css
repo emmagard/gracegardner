@@ -160,6 +160,18 @@ margin-left: 1%;
     opacity: 1;
   }
 
+/******CONTACT FOOTER***********/
+
+footer{
+  background-color: #6C91FF;
+  text-align: center;
+  padding: 1em 0 2em 0;
+  color: white;
+}footer h4{
+  font-size: 1.618em;
+  font-weight: 300;
+}
+
 /************PROJECTS**********/
 
 .project-img{
