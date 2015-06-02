@@ -1,6 +1,6 @@
 # gracegardner
 
-A portfolio site for my sister.
+A portfolio site for my sister. See gh-pages branch for most up to date code.
 
 ## Live Demo
 
